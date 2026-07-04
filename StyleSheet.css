@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --asphalt: #14181B;
     --asphalt-2: #1D2226;
     --paper: #F0EDE6;
@@ -832,3 +832,26 @@ a {
         }
     }
 }
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    z-index: 9999;
+    transition: transform .3s ease;
+}
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
