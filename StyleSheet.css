@@ -166,7 +166,7 @@ a {
         display: block;
     }
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
     .nav-links {
         position: fixed;
         top: 62px;
@@ -260,7 +260,11 @@ a {
     color: var(--ink);
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 768px) {
+    .view-stack {
+        margin-top:30px;
+    }
+
     .curtain {
         transition: none;
         transform: none;
@@ -559,7 +563,7 @@ a {
     color: #6a7075;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
     .site-footer-inner {
         grid-template-columns: 1fr 1fr;
     }
@@ -691,7 +695,7 @@ a {
     color: #6a7075;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 768px) {
     .lightbox, .lightbox img {
         transition: none;
         position: relative;
@@ -719,7 +723,7 @@ a {
         grid-row: span 2;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         .gallery-grid {
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: 150px;
@@ -795,7 +799,7 @@ a {
         color: #6a7075;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 768px) {
         .hero-grid, .porque-grid, .contacto-grid {
             grid-template-columns: 1fr;
         }
