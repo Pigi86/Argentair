@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://pigi86.github.io/Argentair/sitemap.xml
