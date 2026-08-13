@@ -893,3 +893,21 @@ a {
     .whatsapp-float:hover {
         transform: scale(1.1);
     }
+
+.facebook-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.facebook-link:hover {
+    background: #1664d9;
+    transform: translateY(-2px);
+}
