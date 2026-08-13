@@ -898,7 +898,7 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #1877f2;
+    background: #6a7075;
     color: white;
     text-decoration: none;
     padding: 12px 22px;
@@ -908,6 +908,6 @@ a {
 }
 
 .facebook-link:hover {
-    background: #1664d9;
+    background: var(--asphalt);
     transform: translateY(-2px);
 }
