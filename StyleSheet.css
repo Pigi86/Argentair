@@ -85,6 +85,62 @@ a {
     color: inherit;
 }
 
+.problem-intro {
+    max-width: 760px;
+    color: #4b5257;
+    line-height: 1.65;
+    margin: 0 0 2rem;
+}
+
+.problem-card h3 {
+    margin-bottom: .7rem;
+}
+
+.problem-card p {
+    color: #4b5257;
+    line-height: 1.55;
+}
+
+.problem-card .problem-icon {
+    font-size: 1.55rem;
+    color: var(--paper);
+    margin-bottom: .8rem;
+    font-weight: 700;
+}
+
+.faq-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 920px;
+}
+
+.faq-item {
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.45);
+    padding: 1.2rem 1.35rem;
+}
+
+    .faq-item h3 {
+        font-size: 1.05rem;
+        margin: 0 0 .55rem;
+    }
+
+    .faq-item p {
+        margin: 0;
+        color: #4b5257;
+        line-height: 1.6;
+    }
+
+.faq-cta {
+    margin-top: 1.7rem;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        gap: .7rem;
+    }
+}
+
 /* ---------- NAV ---------- */
 .navbar {
     position: fixed;
@@ -262,6 +318,16 @@ a {
 #porque {
     background: var(--asphalt-2);
     color: var(--paper);
+}
+
+#problemas {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+#faq {
+    background: var(--paper);
+    color: var(--ink);
 }
 
 #galeria {
