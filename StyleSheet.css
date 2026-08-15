@@ -11,6 +11,7 @@
     --ink: #1B1F22;
     --line: rgba(155,163,166,0.35);
     --white: white;
+    --dark: #4b5257;
 }
 
 * {
@@ -87,7 +88,7 @@ a {
 
 .problem-intro {
     max-width: 760px;
-    color: #4b5257;
+    color: var(--dark);
     line-height: 1.65;
     margin: 0 0 2rem;
 }
@@ -97,13 +98,13 @@ a {
 }
 
 .problem-card p {
-    color: #4b5257;
+    color: var(--dark);
     line-height: 1.55;
 }
 
 .problem-card .problem-icon {
     font-size: 1.55rem;
-    color: var(--paper);
+    color: var(--dark);
     margin-bottom: .8rem;
     font-weight: 700;
 }
@@ -127,7 +128,7 @@ a {
 
     .faq-item p {
         margin: 0;
-        color: #4b5257;
+        color: var(--dark);
         line-height: 1.6;
     }
 
@@ -499,7 +500,7 @@ a {
     .service-card p {
         margin: 0.7rem 0 0;
         font-size: 0.92rem;
-        color: #4b5257;
+        color: var(--dark);
         line-height: 1.5;
     }
 
