@@ -912,3 +912,22 @@ a {
         background: var(--asphalt);
         transform: translateY(-2px);
     }
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #6a7075;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+    .instagram-link:hover {
+        background: var(--asphalt);
+        transform: translateY(-2px);
+    }
+
