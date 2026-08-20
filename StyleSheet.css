@@ -657,6 +657,10 @@ a {
     .site-footer-inner {
         grid-template-columns: 1fr 1fr;
     }
+
+    .site-footer-col .social-div {
+        margin-top: -100px;
+    }
 }
 
 .lightbox {
@@ -997,4 +1001,3 @@ a {
         background: var(--asphalt);
         transform: translateY(-2px);
     }
-
