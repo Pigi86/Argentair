@@ -658,7 +658,7 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
-    .site-footer-col .social-div {
+    .social-div {
         margin-top: -100px;
     }
 }
