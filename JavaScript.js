@@ -1,4 +1,4 @@
-﻿const navToggle = document.getElementById('navToggle');
+const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 const sectionLinks = document.querySelectorAll('[data-section]');
 const sections = document.querySelectorAll('.curtain');
@@ -59,3 +59,32 @@ document.addEventListener('keydown', (e) => {
 
 const footerYear = document.getElementById('footerYear');
 if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+
+/* ---------- ARGENTAIR CINEMATIC INTRO ---------- */
+(() => {
+    const intro = document.getElementById('argentairIntro');
+    if (!intro) return;
+
+    let seen = null;
+    try { seen = sessionStorage.getItem('lp-intro-seen'); } catch (err) { /* storage no disponible */ }
+
+    if (seen) {
+        intro.remove();
+        return;
+    }
+
+    document.body.classList.add('intro-lock');
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const duration = reducedMotion ? 450 : 2850;
+
+    window.setTimeout(() => {
+        intro.classList.add('is-leaving');
+        document.body.classList.remove('intro-lock');
+        try { sessionStorage.setItem('lp-intro-seen', '1'); } catch (err) { /* storage no disponible */ }
+        window.setTimeout(() => {
+            intro.remove();
+        }, reducedMotion ? 50 : 800);
+    }, duration);
+})();
